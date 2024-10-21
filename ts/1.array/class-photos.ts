@@ -1,4 +1,5 @@
 // o(nlogn);
+
 export function classPhotos(r: number[], b: number[]) {
     let canTakePhoto = true;
     r.sort((a:number,b:number) => a > b ? 1 : -1); 
@@ -11,7 +12,6 @@ export function classPhotos(r: number[], b: number[]) {
     }else { 
         br = 'b' ; 
     }
-
 
     for (let i= r.length - 1 ; i>=0 ; i--) { 
         const mb = b[i] ; 

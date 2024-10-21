@@ -5,7 +5,14 @@ type Queue struct {
 	out []int
 }
 
-func (q Queue) dequeue() int {
+func NewQeueu() *Queue {
+	return &Queue{
+		in:  []int{},
+		out: []int{},
+	}
+}
+
+func (q Queue) Dequeue() int {
 	if len(q.out) == 0 {
 		q.fillStackOut()
 	}
@@ -23,7 +30,7 @@ func (q Queue) peek() int {
 	return q.out[len(q.in)-1]
 }
 
-func (q *Queue) enqueue(value int) {
+func (q *Queue) Enqueue(value int) {
 	q.in = append(q.in, value)
 }
 

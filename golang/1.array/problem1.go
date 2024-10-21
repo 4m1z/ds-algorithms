@@ -40,11 +40,11 @@ func FindSumTargetIndexes(a []int, t int) (int, int) {
 	for I, V := range a {
 		T := t - V
 		if J, ok := C[T]; ok {
-			return I, J 
+			return I, J
 		} else {
 			C[T] = I
 		}
 	}
 
-	return -1,-1
+	return -1, -1
 }

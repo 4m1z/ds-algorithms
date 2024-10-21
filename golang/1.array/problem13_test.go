@@ -20,7 +20,7 @@ func TestFindMaxSubArraySum(t *testing.T) {
 	}
 
 	r = FindMaxSubArraySum([]int{-10, -2, -3, -4})
-	er = -2 
+	er = -2
 	if r != er {
 		t.Log("Third test case")
 		t.Errorf("expected :%+v, but got :%+v", er, r)

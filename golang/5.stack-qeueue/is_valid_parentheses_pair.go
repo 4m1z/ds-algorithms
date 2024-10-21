@@ -32,3 +32,40 @@ func isValidParenthesesPair(str string) bool {
 
 	return isValid
 }
+
+// input => {([  ])}
+
+func Problem1(str string) bool {
+	isValid := true
+	m := map[string]string{
+		"(": ")",
+		"[": "]",
+		"{": "}",
+	}
+	stk := []string{}
+
+	for _, v := range str {
+
+		if _, ok := m[string(v)]; ok {
+			// if it's opening p
+			stk = append(stk, string(v))
+		} else {
+			// closing  one is here
+			if len(stk) > 0 {
+				p := stk[len(stk)-1]
+				if m[p] == string(v) {
+					// we pop the element from the stk
+					stk = stk[:len(stk)-1]
+				} else {
+					isValid = false
+				}
+
+			} else {
+				isValid = false
+			}
+		}
+
+	}
+
+	return isValid
+}

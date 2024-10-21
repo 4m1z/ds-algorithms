@@ -58,3 +58,15 @@ Time Complexity: O(n)
 Find the largest rectangle area in a histogram.
 
 Time Complexity: O(n)
+
+
+
+
+### problem-6: 
+
+
+https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1
+
+
+Expected Time Complexity : O(n)
+Expected Auxiliary Space : O(n)

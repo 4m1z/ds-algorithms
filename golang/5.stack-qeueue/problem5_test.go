@@ -16,3 +16,18 @@ func TestFindLargestRectangleArea(t *testing.T) {
 		}
 	}
 }
+
+func TestFindLargestRectangleArea2(t *testing.T) {
+	tests := []struct {
+		input []int
+		want  int
+	}{
+		{[]int{2, 1, 5, 6, 2, 3}, 10},
+	}
+
+	for _, test := range tests {
+		if got := FindTheLargestRectangleArea2(test.input); got != test.want {
+			t.Errorf("findLargestRectangleArea(%v) = %v, want %v", test.input, got, test.want)
+		}
+	}
+}

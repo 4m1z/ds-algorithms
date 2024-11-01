@@ -22,3 +22,14 @@ Given the sorted array `[1, 2, 2, 2, 3, 4, 4, 5]` and the target value `2`, the 
 Imagine you have two crystal balls, and you want to determine the critical height of a building with 100 floors. You can use an optimized strategy to minimize the number of drops required. For example, you might drop the first ball from floor 14, then 27, 39, 50, and so on, using a decreasing gap between drops. If the first ball breaks on a certain floor, you can use a linear search with the second ball to find the exact critical floor. With this strategy, you can determine the critical height in fewer drops compared to a brute-force approach of testing each floor one by one.
 
 These enhanced problem descriptions should make it clearer and more understandable what each problem is about and how it can be approached.
+
+
+## Problem 4: Meteors ( parallel binary search )
+
+link: https://www.spoj.com/problems/METEORS/
+
+
+
+## Problem 5:
+
+link : https://codeforces.com/problemset/problem/484/E

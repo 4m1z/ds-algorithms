@@ -52,3 +52,55 @@ func max(a, b int) int {
 
 	return b
 }
+
+func FindTheLargestRectangleArea2(a []int) int {
+	maxArea := -1
+
+	// from left
+	L := make([]int, len(a))
+
+	stk := []int{}
+
+	for i := 0; i < len(a); i++ {
+		for len(stk) > 0 && a[stk[len(stk)-1]] >= a[i] {
+			stk = stk[:len(stk)-1]
+		}
+
+		if len(stk) == 0 {
+			L[i] = 0
+		} else {
+			L[i] = stk[len(stk)-1] + 1
+		}
+
+		stk = append(stk, i)
+	}
+
+	stk = []int{}
+
+	// from Right
+	R := make([]int, len(a))
+	for i := len(a) - 1; i >= 0; i-- {
+		for len(stk) > 0 && a[stk[len(stk)-1]] >= a[i] {
+			stk = stk[:len(stk)-1]
+		}
+
+		if len(stk) == 0 {
+			R[i] = len(a) - 1
+		} else {
+			R[i] = stk[len(stk)-1] - 1
+		}
+
+		stk = append(stk, i)
+	}
+
+	// calculate max
+	for i, v := range a {
+		m := v * (R[i] - L[i] + 1)
+
+		if m > maxArea {
+			maxArea = m
+		}
+	}
+
+	return maxArea
+}

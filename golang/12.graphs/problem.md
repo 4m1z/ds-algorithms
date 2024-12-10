@@ -56,3 +56,8 @@ https://codeforces.com/problemset/problem/94/B
 # problem-7 
 
 https://codeforces.com/problemset/problem/707/B
+
+
+# problem-8
+
+https://cses.fi/alon/task/1666

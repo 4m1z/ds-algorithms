@@ -55,29 +55,30 @@ func (g Graph) BfsTraverse() []int {
 	return result
 }
 
-func dfs(edges [][]int, seen map[int]bool, vertex int, result *[]int) {
+func dfs(edges [][]int, seen map[int]bool, vertex int, res *[]int) {
 	// kill condition
 	if seen[vertex] {
 		return
 	}
 
-	// add to result
+	// mark as seen
 	seen[vertex] = true
-	*result = append(*result, vertex)
-	connections := edges[vertex]
+	// logic
+	*res = append(*res, vertex)
 
-	// call dfs again
-	for _, connection := range connections {
-		if !seen[connection] {
-			dfs(edges, seen, connection, result)
+	// visit other nodes
+	conns := edges[vertex]
+	for _, conn := range conns {
+		if !seen[conn] {
+			dfs(edges, seen, conn, res)
 		}
 	}
 }
 
-func (g Graph) DfsTraverse() []int {
+func (g Graph) DfsTraverse() (res []int) {
 	seen := make(map[int]bool, len(g.vertices))
-	result := []int{}
-	dfs(g.edges, seen, 0, &result)
 
-	return result
+	dfs(g.edges, seen, 0, &res)
+
+	return res
 }

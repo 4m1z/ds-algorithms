@@ -232,3 +232,10 @@ Expected Auxiliary Space: O(max(Arr[i]))
 
 https://www.geeksforgeeks.org/problems/pythagorean-triplet3018/1
 
+---
+
+### Problem #28
+find all the triplets such that the sum of three elements 
+will be 0 
+
+a + b + c  = 0 

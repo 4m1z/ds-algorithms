@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"math"
 )
 
@@ -21,8 +20,6 @@ func SquaredStoredArray(a []int) []int {
 		}
 		ce--
 	}
-
-	log.Printf("what is s: %+v", s)
 
 	return s
 }

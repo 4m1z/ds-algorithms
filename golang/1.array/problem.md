@@ -1,10 +1,12 @@
 # Arrays Problems Description
 
-### Problem #1
+### Problem #1 
 
 **Description:** You have a list of positive numbers, and you need to find two numbers in the list that add up to a given target number.
 
 **Example:** If you have a list of [2, 7, 11, 15] and the target is 9, you need to find the first two numbers (2 and 7) because 2 + 7 = 9.
+
+Tag=> two pointer
 
 
 ---
@@ -15,6 +17,8 @@
 
 **Example:** Given the heights [1, 8, 6, 2, 5, 4, 8, 3, 7], the two lines with heights 8 and 7 would create the largest container, holding a total of 7 units of water.
 
+Tag: two pointer
+
 ---
 
 ### Problem #3
@@ -23,6 +27,8 @@
 **Description:** You have a list of rectangles, each with a height of 1, and you want to determine how much water can be trapped within these rectangles.
 
 **Example:** If you have a sequence of rectangles with heights [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1], you can trap a total of 6 units of water within them.
+
+Tag : two pointer
 
 ---
 
@@ -39,6 +45,8 @@
 **Description:** You have an array of sorted integers that are the squares of other integers. Find this sorted array.
 
 **Example:** Given the sorted squared array [1, 2, 3, 4, 5], these are the squares of the integers [1, 4, 9, 16, 25]
+
+Tag: two pointer
 
 ---
 
@@ -239,3 +247,52 @@ find all the triplets such that the sum of three elements
 will be 0 
 
 a + b + c  = 0 
+
+Tag: two pointer
+
+---- 
+
+
+### Problem #29: 
+
+happy number problem 
+
+Tag: fast and slow pointers
+
+
+--- 
+
+### Problem #30: 
+
+Substring anagrams
+
+
+Tag: sliding window 
+
+
+--- 
+
+
+
+
+### Problem #31: 
+
+
+Longest substring with unique characters
+
+Tag: sliding window 
+
+
+--- 
+
+
+
+
+### Problem #32: 
+
+
+Longest uniform substring after replacement
+
+Tag: sliding window 
+
+---

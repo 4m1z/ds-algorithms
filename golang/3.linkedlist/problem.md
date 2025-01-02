@@ -23,3 +23,33 @@ You are given a linked list that may contain duplicate elements. Your task is to
 
 Input Linked List: 1 -> 2 -> 2 -> 3 -> 4 -> 4 -> 5
 Output Linked List: 1 -> 2 -> 3 -> 4 -> 5
+
+
+
+
+## Problem 6: Remove the K'th last node from a linked list 
+
+
+
+
+## Problem 7: linked list intersection 
+
+
+## Problem 8: LRU Cache
+
+
+
+*-------*
+
+## Problem 9: linked list loop 
+
+
+tag: fast and slow pointers
+
+
+
+
+
+## Problem 10: linked list mid point
+
+tag: fast and slow pointers

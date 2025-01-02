@@ -72,3 +72,8 @@ Expected Time Complexity : O(n)
 Expected Auxiliary Space : O(n)
 
 
+
+
+### problem-7: 
+
+Evaluate expression 

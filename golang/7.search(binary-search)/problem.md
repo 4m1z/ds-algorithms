@@ -33,3 +33,31 @@ link: https://www.spoj.com/problems/METEORS/
 ## Problem 5:
 
 link : https://codeforces.com/problemset/problem/484/E
+
+
+
+
+## problem 6: 
+
+Find insertion index
+
+
+
+## problem 7:
+
+Find first and last occurance of a number
+
+
+
+## problem 8:
+
+Cutting wood 
+
+
+## problem 9:  
+
+Find the target in roasted sorted array
+
+
+
+

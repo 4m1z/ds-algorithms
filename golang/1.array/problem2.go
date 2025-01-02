@@ -28,16 +28,20 @@ func findMaxArea(arr []int) int {
 func FindMaxArea(a []int) int {
 	A := 0
 
+	// left pointer
 	L := 0
+	// right pointer
 	R := len(a) - 1
 
 	for L < R {
+		// calculate the area
 		S := int(math.Min(float64(a[R]), float64(a[L]))) * (R - L)
 
 		if S > A {
 			A = S
 		}
 
+		// navigate inward
 		if a[R] > a[L] {
 			L++
 		} else {
@@ -45,5 +49,6 @@ func FindMaxArea(a []int) int {
 		}
 	}
 
+	// return max area
 	return A
 }

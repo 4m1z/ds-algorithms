@@ -27,3 +27,20 @@ A min heap is similar to a max heap, but the parent nodes have values less than 
 5. **Building a Min Heap**: You can build a min heap from an unsorted array by starting from the last non-leaf node (parent of the last element) and applying the sink-down operation on each node in reverse order.
 
 Implementing max and min heaps involves similar principles, but the comparison directions (greater or smaller) are reversed. The operations ensure that the heap properties are maintained during insertion and deletion, allowing for efficient retrieval of the maximum or minimum element.
+
+------
+
+## problem-1 
+
+K most frequent string 
+
+
+## problem-2 
+
+Combine sorted linked lists
+ 
+
+## problem-3 
+
+Median of an integer Stream
+

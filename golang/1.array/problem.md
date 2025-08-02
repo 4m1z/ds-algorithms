@@ -296,3 +296,27 @@ Longest uniform substring after replacement
 Tag: sliding window 
 
 ---
+
+
+### Problem #33: 
+
+https://leetcode.com/problems/contains-duplicate
+
+
+
+
+---
+
+
+### Problem #34:
+
+https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
+
+
+----
+
+### Problem #35: 
+
+https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+
+

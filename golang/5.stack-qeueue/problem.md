@@ -45,7 +45,7 @@
 
 
 
-### problem-4:  
+## problem-4:  
 
 Find the nearest smaller element to the right of each element in an array. If there is no smaller element, return -1. 
 
@@ -53,7 +53,7 @@ Find the nearest smaller element to the right of each element in an array. If th
 Time Complexity: O(n)
 
 
-### problem-5: 
+## problem-5: 
 
 Find the largest rectangle area in a histogram.
 
@@ -62,7 +62,7 @@ Time Complexity: O(n)
 
 
 
-### problem-6: 
+## problem-6: 
 
 
 https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1
@@ -74,6 +74,35 @@ Expected Auxiliary Space : O(n)
 
 
 
-### problem-7: 
+✅ Problem-7: Async Queue
 
-Evaluate expression 
+Description:
+Implement an asynchronous queue class with the following API:
+
+    enqueue(item):
+        if there are pending dequeue requests:
+            resolve the oldest pending dequeue request with the item
+        else:
+            add the item to the internal queue
+    
+    dequeue():
+        if the internal queue is not empty:
+            return and remove the oldest item from the internal queue
+        else:
+            create a pending promise
+            add the promise to the list of pending dequeue requests
+            return the pending promise
+    If the queue is empty, it waits until an item is available.
+
+This is especially useful in producer-consumer scenarios where producers and consumers operate asynchronously.
+
+Your queue must support the following behavior:
+
+    If dequeue() is called before an item is enqueued, the promise should wait (i.e., it should be pending) until an item is added.
+
+    If enqueue() is called and there are pending dequeue() calls, the item should be delivered to the oldest pending dequeue().
+
+    If enqueue() is called and there are no pending dequeue() calls, the item should be added to the internal queue.
+
+🔧 Constraints:
+    The queue should preserve the order of both items and pending dequeues (FIFO for both).

@@ -319,4 +319,16 @@ https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/descripti
 
 https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
+----
 
+### Problem #36: 
+
+https://leetcode.com/problems/minimum-time-visiting-all-points/
+
+---
+
+### Problem #37: 
+
+https://leetcode.com/problems/spiral-matrix/
+
+---

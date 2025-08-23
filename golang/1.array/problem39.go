@@ -1,4 +1,4 @@
-package matrix_bfs
+package main
 
 var directions = [][]int{
 	{-1, 0},

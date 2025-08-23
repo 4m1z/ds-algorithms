@@ -1,4 +1,4 @@
-package chessboard
+package main
 
 var knightMoves = [][]int{
 	{-2, 1},
@@ -31,7 +31,7 @@ func chessboard(n, r, c, k int) float64 {
 	return kp(n, r, c, k)
 }
 
-//
+////
 
 func memoizedKp(n, r, c, k int, memoizedData *[][][]float64) float64 {
 	if r >= n || r < 0 || c >= n || c < 0 {

@@ -1,17 +1,10 @@
-package scapetogate
+package main
 
 const Wall = -1
 const Empty = 2147483647
 const Gate = 0
 
-var directions = [][]int{
-	{-1, 0},
-	{0, 1},
-	{1, 0},
-	{0, -1},
-}
-
-func dfs(matrix *[][]int, row, col, steps int) {
+func dfs42(matrix *[][]int, row, col, steps int) {
 	if row >= len(*matrix) || row < 0 || col >= len((*matrix)[0]) || col < 0 {
 		return
 	}
@@ -28,7 +21,7 @@ func dfs(matrix *[][]int, row, col, steps int) {
 
 		if directionRow < len(*matrix) && directionRow >= 0 && directionCol < len((*matrix)[0]) && directionCol >= 0 {
 			if (*matrix)[directionRow][directionCol] != Wall && (*matrix)[directionRow][directionCol] != Gate {
-				dfs(matrix, directionRow, directionCol, steps+1)
+				dfs42(matrix, directionRow, directionCol, steps+1)
 			}
 		}
 	}
@@ -55,7 +48,7 @@ func scapeToGateDfs(matrix [][]int) [][]int {
 		seen[row][col] = true
 
 		if matrix[row][col] == Gate {
-			dfs(&matrix, row, col, 0)
+			dfs42(&matrix, row, col, 0)
 		}
 
 		for _, direction := range directions {

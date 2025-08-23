@@ -1,13 +1,6 @@
-package rottenoranges
+package main
 
 import "math"
-
-var directions = [][]int{
-	{-1, 0},
-	{0, 1},
-	{1, 0},
-	{0, -1},
-}
 
 func findRottenOrangesCoordinatesAndCountFreshOranges(matrix [][]int) ([][]int, int) {
 	initialRow := int(math.Ceil(float64((len(matrix) - 1) / 2)))

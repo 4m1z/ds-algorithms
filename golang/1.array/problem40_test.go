@@ -1,4 +1,4 @@
-package islands
+package main
 
 import (
 	"log"

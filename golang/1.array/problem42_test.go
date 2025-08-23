@@ -1,4 +1,4 @@
-package scapetogate
+package main
 
 import (
 	"log"

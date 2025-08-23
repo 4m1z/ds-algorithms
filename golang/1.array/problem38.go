@@ -1,11 +1,4 @@
-package matrix_dfs
-
-var directions = [][]int{
-	{-1, 0},
-	{0, 1},
-	{1, 0},
-	{0, -1},
-}
+package main
 
 func dfs(matrix *[][]int, result *[]int, row int, col int, seen *[][]bool) {
 	if row >= len(*matrix) || row < 0 || col >= len((*matrix)[0]) || col < 0 {

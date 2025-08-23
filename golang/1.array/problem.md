@@ -332,3 +332,77 @@ https://leetcode.com/problems/minimum-time-visiting-all-points/
 https://leetcode.com/problems/spiral-matrix/
 
 ---
+
+### Problem #38 
+
+dfs in matrix 
+
+--- 
+
+### Problem #39 
+
+bfs in matrix 
+
+
+
+
+----
+
+
+### problem 40:
+
+https://leetcode.com/problems/number-of-islands/description/
+
+
+
+---
+
+
+
+### Problem 41: Knight's Probability on Chessboard
+
+**Description:** A knight on an nxn chessboard makes k random moves (8 possible directions). You need to find the probability that the knight is still on the chessboard after k moves.
+
+**Example:** If the knight starts at (0, 0) on a 3x3 chessboard and makes 2 random moves, there is a certain probability that it remains on the chessboard. Calculating this probability is the goal of this problem.
+
+
+--- 
+
+### Problem 42: 
+
+**Description:** Given a 2D array with rooms represented by empty spaces, walls, and gates, you need to fill each empty room with the number of steps required to reach the nearest gate. If a room cannot be reached from any gate, it remains with an unreachable value (e.g., INF).
+
+**Example:** Given a 4x4 grid with gates (G), empty rooms (E), and walls (W):
+
+```
+G  E  G  W
+W  W  E  W
+G  W  W  W
+W  E  E  G
+```
+
+After processing, the grid might look like:
+
+```
+G  0  G  W
+W  W  1  W
+G  2  1  1
+W  1  0  G
+```
+
+
+---
+
+### Problem 43: rotting-oranges
+
+https://leetcode.com/problems/rotting-oranges/description/
+
+
+
+
+
+
+
+
+
+

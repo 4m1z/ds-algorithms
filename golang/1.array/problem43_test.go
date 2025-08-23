@@ -1,4 +1,4 @@
-package rottenoranges
+package main
 
 import (
 	"log"

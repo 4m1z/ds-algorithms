@@ -13,7 +13,6 @@ func dfs40(m [][]int, i, j int) {
 }
 
 func countIslandsDfs(m [][]int) (t int) {
-
 	for i, row := range m {
 		for j, col := range row {
 			if col == 1 {
@@ -27,24 +26,22 @@ func countIslandsDfs(m [][]int) (t int) {
 }
 
 // / bfs
-func bfs(matrix *[][]int, initialRow, initialCol int) {
-	queue := [][]int{{initialRow, initialCol}}
+func bfs(m [][]int, i, j int) {
+	queue := [][]int{{i, j}}
 
 	for len(queue) > 0 {
-		current := queue[0]
+		c := queue[0]
 		queue = queue[1:]
-		row := current[0]
-		col := current[1]
 
-		for _, direction := range directions {
-			tempRow := row + direction[0]
-			tempCol := col + direction[1]
-			if tempRow < len(*matrix) && tempRow >= 0 && tempCol < len((*matrix)[0]) && tempCol >= 0 {
-				if (*matrix)[tempRow][tempCol] == 1 {
-					(*matrix)[tempRow][tempCol] = 0
-					queue = append(queue, []int{tempRow, tempCol})
-				}
+		for _, dir := range directions {
+			ti := c[0] + dir[0]
+			tj := c[1] + dir[1]
+
+			if m[ti][tj] == 1 {
+				m[ti][tj] = 0
+				queue = append(queue, []int{ti, tj})
 			}
+
 		}
 	}
 }
@@ -54,7 +51,7 @@ func countIslandsBfs(matrix [][]int) (t int) {
 		for j := 0; j < len(matrix[i]); j++ {
 			if matrix[i][j] == 1 {
 				t++
-				bfs(&matrix, i, j)
+				bfs(matrix, i, j)
 			}
 		}
 	}
